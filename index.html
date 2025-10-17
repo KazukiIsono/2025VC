@@ -1,19 +1,41 @@
 <!doctype html>
-<link rel="stylesheet" href="stylesheet.css">
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>NSの講義 - トップ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preload" href="stylesheet.css" as="style" />
+  <link rel="stylesheet" href="stylesheet.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="site-title">NSの講義</h1>
+    <p class="site-sub">磯野 和希の作成コンテンツ</p>
+  </header>
 
-<HTML>
-   <HEAD>
-      <meta charset="UTF-8">
-      <TITLE>Webページの基礎</TITLE>
-   </HEAD>
-   <BODY>
-	<center><h1>NSの講義</h1>
-	<P>磯野　和希</center>
-<ul>
-    <li><a href="lesson1-org2.html">情報数学基礎</a></li>
-    <li><a href="lesson1-org3.html">コンピュータグラフィックス</a></li>
-    <li><a href="lesson1-org1.html">ビジュアルコンテンツデザイン</a></li>
-</ul>
-   </BODY>
-</HTML>
+  <nav class="site-nav">
+    <ul>
+      <li><a href="lesson1-org2.html">情報数学基礎</a></li>
+      <li><a href="lesson1-org3.html">コンピュータグラフィックス</a></li>
+      <li><a href="lesson1-org1.html">ビジュアルコンテンツデザイン</a></li>
+    </ul>
+  </nav>
 
+  <main class="container">
+    <section class="card">
+      <img src="ganba.png" alt="がんばろうのイラスト" class="thumb" />
+      <div>
+        <h2>このサイトについて</h2>
+        <p>
+          授業課題として作成したWebコンテンツです。下位3ページは共通CSSで統一デザインにしています。
+          画像は課題向けに差し替えたイラストを使用しています。
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>&copy; 2025 Kazuki Isono</small>
+  </footer>
+</body>
+</html>

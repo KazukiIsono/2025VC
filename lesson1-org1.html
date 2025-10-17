@@ -1,15 +1,30 @@
 ﻿<!doctype html>
-<link rel="stylesheet" href="stylesheet.css">
-<HTML>
-   <HEAD>
-      <meta charset="UTF-8">
-      <TITLE>Webページの基礎</TITLE>
-   </HEAD>
-   <BODY>
-	<center><h1>ビジュアルコンテンツデザイン</h1></center>
-　　　　<P>この授業では、Web制作を中心に情報デザインを学びます。</p>
-<p>もともと情報デザインに興味があったので楽しみです。</p>
-<p><a href="index.html">もどる</a></p>
-        <P><img src="ganba.png" width="128" height="128" alt="頑張ろう">
-   </BODY>
-</HTML>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>ビジュアルコンテンツデザイン</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="stylesheet.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="site-title">ビジュアルコンテンツデザイン</h1>
+    <a class="backlink" href="index.html">← トップへ戻る</a>
+  </header>
+
+  <main class="container">
+    <article class="card">
+      <img src="ganba.png" alt="がんばろうのイラスト" class="thumb" />
+      <div>
+        <h2>授業メモ</h2>
+        <p>この授業では、Web制作を中心に情報デザインを学びました。</p>
+        <p class="note">今回は、フォント装飾や余白の設計など、CSSの基礎を実践しました。</p>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <small>&copy; 2025 Kazuki Isono</small>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>超かんたん計算ページ</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 40px;
+      background: #f5f5f5;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    input, button {
+      font-size: 16px;
+      padding: 6px 10px;
+      margin: 5px 0;
+    }
+    .box {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      width: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <h1>かんたん計算</h1>
+
+    A : <input type="text" id="a"><br>
+    B : <input type="text" id="b"><br>
+
+    <button onclick="calc()">計算する</button>
+
+    <p>足し算の結果：<span id="result_number">---</span></p>
+    <p>文字列の結果：<span id="result_string">---</span></p>
+  </div>
+
+  <script>
+    function calc() {
+      const v1 = document.getElementById("a").value;
+      const v2 = document.getElementById("b").value;
+
+      // 数値として計算
+      const numResult = Number(v1) + Number(v2);
+
+      // 文字列として結合
+      const strResult = v1 + v2;
+
+      document.getElementById("result_number").textContent = numResult;
+      document.getElementById("result_string").textContent = strResult;
+    }
+  </script>
+</body>
+</html>
